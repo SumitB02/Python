@@ -1,0 +1,280 @@
+'''
+
+Range
+
+for number in range(a,b):
+    print(number)
+
+'''
+
+# For Loop with Range
+
+for number in range(1,11):
+    print(number)
+
+'''
+
+Output :
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+'''
+
+
+'''
+
+for number in range(start,stop,step):
+    print(number)
+    
+'''
+
+for number in range(1,11,3):
+    print(number)
+
+'''
+Output:
+
+1
+4
+7
+10
+
+'''
+
+# How to add number from 1 to 100 using Loops?
+
+total = 0
+for number in range(1,101):
+    total +=number
+print(total)
+
+# Output
+# 5050
+
+
+'''
+
+Day 5.3 Adding Even Exercise
+
+Adding Evens
+
+Instructions
+
+You are going to write a program that calculates the sum of all the even numbers
+from 1 to 100,including 1 and 100
+
+e.g. 2+4+6+8+10+ ..... +98+100
+
+Important,there should only be 1 print statement in your console output.
+It should just print the final total and not every step of the calculation.
+
+Also we will constrain the inputs to only take numbers from 0 to a max of 100.
+
+
+Hint
+
+1. There are quite a few ways of solving this problem,but you will need to use the range() function in any of the solutions.
+
+
+'''
+
+# Write your code below this line
+
+# Method-01
+
+sum =0
+for number in range(2,101,2):
+    sum += number
+print(sum)
+
+# Output
+# 2550
+
+# Method-02
+
+total2 = 0
+for number in range(1,101):
+    if number % 2 == 0:
+        total2 += number
+print(total2)
+
+# Output
+# 2550
+
+
+'''
+
+Day 5.4 Fizz Buzz Exercise
+
+FizzBuzz
+
+Instructions
+
+You are going to write a program that automatically prints the solution to the FizzBuzz game.
+
+Your program should print each number from 1 to 100 in turn.
+When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+
+When the number is divisible by 5, then instead of printing the number it should print "Buzz".
+
+And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz".
+
+e.g. it might start off like this:
+
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+
+... etc.
+
+Hint
+
+1. Remember your answer should start from 1 and go upto and including 100.
+2. Each number/text should be printed on a separate line.
+
+'''
+
+# Write your code below this line
+
+for number in range(1,101):
+    # Divisible by 3 and 5 both
+    if number % 3 == 0 and number % 5 == 0:
+        print('FizzBuzz')
+    elif number % 3 == 0:
+        print('Fizz')
+    elif number % 5 == 0:
+        print('Buzz')
+    else:
+        print(number)
+
+
+
+'''
+
+Output
+
+
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
+32
+Fizz
+34
+Buzz
+Fizz
+37
+38
+Fizz
+Buzz
+41
+Fizz
+43
+44
+FizzBuzz
+46
+47
+Fizz
+49
+Buzz
+Fizz
+52
+53
+Fizz
+Buzz
+56
+Fizz
+58
+59
+FizzBuzz
+61
+62
+Fizz
+64
+Buzz
+Fizz
+67
+68
+Fizz
+Buzz
+71
+Fizz
+73
+74
+FizzBuzz
+76
+77
+Fizz
+79
+Buzz
+Fizz
+82
+83
+Fizz
+Buzz
+86
+Fizz
+88
+89
+FizzBuzz
+91
+92
+Fizz
+94
+Buzz
+Fizz
+97
+98
+Fizz
+Buzz
+
+
+'''
